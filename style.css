@@ -1,0 +1,511 @@
+/************************SHARED WITH ALL MAIN PAGES************************/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	height: 100%;
+	animation: fadeIn ease 1.5s; 
+	color: #ededed;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	z-index: 11;
+	background: #1a1a1a;	
+}
+
+.logo {
+	float: left;
+	line-height: 50px;
+	margin-left: 40px;
+}
+
+.logo a {
+	color: #ededed;
+	font-size: 26px;
+	letter-spacing: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+
+.logo a:hover{
+	opacity: .7;
+}
+
+nav {
+	float: right;
+	line-height: 50px;
+	margin-right: 40px;
+}
+
+nav a {
+	color: #ededed;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 20px;
+	transition: 0.3s;
+}
+
+nav a:hover{
+	opacity: .7;
+}
+
+/************************HOME PAGE ONLY************************/
+.home-body{
+	overflow: hidden;
+}
+
+.svg-wrapper {
+  width: 90%;
+  margin: 20% auto;
+}
+
+.title  {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  transform: scale(4);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.subtitle {
+  opacity: 0;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 4px;
+  top: -48px;
+  position: relative;
+  white-space: nowrap;
+  transition: 1.5s;
+}
+
+.shape {
+  stroke-dasharray: 140 1540;
+  stroke-dashoffset: -320;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #ededed;;
+  border-bottom: 5px solid black;
+  transition: 1.5s;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 3px;
+  stroke-dasharray: 1680;
+  stroke-dashoffset: 0;
+}
+
+.svg-wrapper:hover .subtitle{
+  opacity: 1;
+}
+
+.footer p{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	opacity: .7;
+}
+
+.bg-vid {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+/************************SHARED WITH ALL NON-HOME PAGES************************/
+h1 {
+	text-align: center;
+	position: relative;
+	font-size: 70px;
+	top: 150px;
+	background-color: rgba(0,0,0,.2);
+	padding: 15px 0px;
+}
+
+.content-area {
+	position: relative;
+	width: 100%;
+	top: 450px;
+	background: #1a1a1a;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.footer {
+	position: relative;
+  	margin-top: 200px;	
+  	padding-bottom: 15px;
+  	text-align: center;
+  	width: 100%;
+	font-size: 16px;
+	color: #949494;
+}
+
+/************************PROJECTS PAGE ONLY************************/
+.projects-banner-area {
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top: 50px;
+	background: url(images/banners/projects-banner.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.projects-container {
+	display: inline-block;
+	position: relative;
+	width: 608px;
+	height:342px;
+	margin:20px;
+}
+
+.projects-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.projects-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.6);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .7s ease;
+}
+
+.projects-container:hover .projects-overlay {
+  height: 100%;
+}
+
+.projects-text {
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.projects-text h2 {
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+.projects-text p {
+	font-size: 17px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 1.7;
+}
+
+.projects-text a {
+	font-size: 17px;
+	text-decoration: none;
+	color: #ededed;
+}
+
+/************************PHOTO PAGE ONLY************************/
+.photo-banner-area {
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top: 50px;
+	background: url(images/banners/photo-banner.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.photo-container {
+	display: inline-block;
+	position: relative;
+	width: 608px;
+	height:342px;
+	margin:20px;
+}
+
+.photo-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s;
+}
+
+.photo-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+
+.photo-container:hover .photo-image {
+transform: scale(.97);
+}
+
+.photo-container:hover .photo-overlay {
+	transform: scale(.97);
+	opacity: 1;
+	background-color: rgba(0,0,0,.6);
+}
+
+.photo-text a {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+	font-weight: 300;
+	color: #ededed;
+	font-size: 27px;
+}
+
+/************************VIDEO PAGE ONLY************************/
+.video-banner-area {
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top: 50px;
+	background: url(images/banners/video-banner.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.video-container {
+	display: inline-block;
+	position: relative;
+	width: 608px;
+	height:342px;
+	margin:20px;
+}
+
+.video-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.6);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.video-container:hover .video-overlay {
+  height: 50px;
+}
+
+.video-text {
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.video-text h2 {
+	font-size: 25px;
+	margin-top: 10px;
+	font-weight: 300;
+	text-decoration: none;
+	color: #ededed;
+}
+
+/************************ABOUT PAGE ONLY************************/
+.about-banner-area {
+	width: 100%;
+	height: 400px;
+	position: fixed;
+	top: 50px;
+	background: url(images/banners/about-banner.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.about-profile {
+	max-width: 600px;
+	max-height: 400px;
+	position: relative;
+	margin: 50px 0px;	
+}
+
+.about-container {
+	display: inline-block;
+	position: relative;
+	width: 608px;
+	height:342px;
+	margin:20px;
+}
+
+.about-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.about-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.6);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .7s ease;
+}
+
+.about-container:hover .about-overlay {
+  height: 60%;
+}
+
+.about-text {
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.about-text h2 {
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+.about-text h3 {
+	text-align: left;
+	width: 60%;
+	margin: 1px auto;
+	line-height: 2;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.about-text h4 {
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	width: 60%;
+	font-size: 40px;
+	word-spacing: 5px;
+	font-weight: 400;
+}
+
+.about-text p {
+	font-size: 17px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 1.7;
+}
+
+.about-text a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #ededed;
+}
+
+.fa {
+	text-decoration: none;
+  	color: #ededed;
+  	padding: 5px;
+  	margin: 120px 24px 0px 24px;
+
+  	transition: 0.3s
+  }
+
+.fa:hover {
+  	opacity: 0.7;
+}
+
+/*******************ALL PHOTO PAGES*******************/
+.photo-page-content-area {
+  position: relative;
+  width: 100%;
+  top: 400px;
+  background: #1a1a1a;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.photo-page {
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 2% auto;
+}
+
+/*******************PAGE SPECIFIC*******************/
+.china2019-banner-area {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  background: url(images/photo/china2019.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.cocktails-banner-area {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  background: url(images/photo/cocktails.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.cornell2019-banner-area {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  background: url(images/photo/cornell2019.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.cornell2020-banner-area {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  background: url(images/photo/cornell2020.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.europe2019-banner-area {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  background: url(images/photo/europe2019.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.summer2020-banner-area {
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  background: url(images/photo/summer2020.jpg);
+  background-size: cover;
+  background-position: center center;
+}
