@@ -1,25 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Photo</title>
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="aos.css">
+		<link rel="stylesheet" href="css/aos.css">
+		<link rel="stylesheet" href="css/lightbox.min.css">
+		<script src=js/lightbox-plus-jquery.min.js></script>
 		<link rel="icon" href="images/icon.png">
-		<link rel="stylesheet" href="style.css?ver=2.0.0"/>
+		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 
-	<body>		
+	<body class="photo-body">		
 		<div class="box-area">
 			<header>
 				<div class="logo">
-					<a href="index.html?ver=2.0.0">Eric Gu</a>
+					<a href="index.html">Eric Gu</a>
 				</div>
 				<nav>
-					<a href="index.html?ver=2.0.0">Home</a></li>
-				<a href="projects.html?ver=2.0.0">Projects</a></li>		
-				<a href="photo.html?ver=2.0.0">Photo</a></li>
-				<a href="video.html?ver=2.0.0">Video</a></li>
-				<a href="about.html?ver=2.0.0">About</a></li>
+					<a href="index.html?ver=3.1.0">Home</a></li>
+				<a href="projects.html?ver=3.1.0">Projects</a></li>		
+				<a href="photo.html?ver=3.1.0">Photo</a></li>
+				<a href="video.html?ver=3.1.0">Video</a></li>
+				<a href="about.html?ver=3.1.0">About</a></li>
 				</nav>
 			</header>
 		</div>
@@ -29,70 +31,114 @@
 		</div>
 
 		<div class="content-area">	
-			
-			<div data-aos="fade-up" class="photo-container">
-				<img src="images/photo/summer2020.jpg" class="photo-image">
-				<div class="photo-overlay">
-					<div class="photo-text">
-				   		<a href="summer2020.html?ver=2.0.0">Summer 2020</a> 
-				    </div>
-				</div>
-			</div>
-			
-			<div data-aos="fade-up" class="photo-container">
-				<img src="images/photo/cornell2020.jpg" class="photo-image">
-				<div class="photo-overlay">
-					<div class="photo-text">
-				   		<a href="cornell2020.html?ver=2.0.0">Cornell 2020</a> 
-				    </div>
-				</div>
-			</div>
 
-			<div data-aos="fade-up" class="photo-container">
-				<img src="images/photo/cornell2019.jpg" class="photo-image">
-				<div class="photo-overlay">
-					<div class="photo-text">
-				   		<a href="cornell2019.html?ver=2.0.0">Cornell 2019</a> 
-				    </div>
-				</div>
-			</div>
+				
+			<script>
+				lightbox.option({
+					'showImageNumberLabel': false,
+				})
+			</script>
 
-			<div data-aos="fade-up" class="photo-container">
-				<img src="images/photo/europe2019.jpg" class="photo-image">
-				<div class="photo-overlay">
-					<div class="photo-text">
-				   		<a href="europe2019.html?ver=2.0.0">Europe 2019</a> 
-				    </div>
-				</div>
-			</div>
-
-			<div data-aos="fade-up" class="photo-container">
-				<img src="images/photo/china2019.jpg" class="photo-image">
-				<div class="photo-overlay">
-					<div class="photo-text">
-				   		<a href="china2019.html?ver=2.0.0">China 2019</a> 
-				    </div>
-				</div>
-			</div>
-
-			<div data-aos="fade-up" class="photo-container">
-				<img src="images/photo/cocktails.jpg" class="photo-image">
-				<div class="photo-overlay">
-					<div class="photo-text">
-				   		<a href="cocktails.html?ver=2.0.0">Cocktails</a> 
-				    </div>
-				</div>
-			</div>
+			<a href="images/photo/bike.jpg" data-lightbox="photo-gallery" data-title="My Specialized Allez Sport at sunset"><img data-aos="fade-up" 
+				src="images/photo/bike.jpg" class="photo-image"></a>	
+			<a href="images/photo/franconia.jpg" data-lightbox="photo-gallery" data-title="One of the many waterfalls found within Franconia Notch State Park"><img data-aos="fade-up" 
+				src="images/photo/franconia.jpg" class="photo-image"></a>	
+			<a href="images/photo/flume.jpg" data-lightbox="photo-gallery" data-title="The Flume Gorge Trail"><img data-aos="fade-up" 
+				src="images/photo/flume.jpg" class="photo-image"></a>	
+			<a href="images/photo/charles-river.jpg" data-lightbox="photo-gallery" data-title="The Charles River"><img data-aos="fade-up" 
+				src="images/photo/charles-river.jpg" class="photo-image"></a>	
+			<a href="images/photo/bird.jpg" data-lightbox="photo-gallery" data-title="A bird sitting in my backyard"><img data-aos="fade-up" 
+				src="images/photo/bird.jpg" class="photo-image"></a>	
+			<a href="images/photo/goats.jpg" data-lightbox="photo-gallery" data-title="My neighbor's goats"><img data-aos="fade-up" 
+				src="images/photo/goats.jpg" class="photo-image"></a>	
+			<a href="images/photo/slope.jpg" data-lightbox="photo-gallery" data-title="The Slope"><img data-aos="fade-up" 
+				src="images/photo/slope.jpg" class="photo-image"></a>	
+			<a href="images/photo/clock-tower.jpg" data-lightbox="photo-gallery" data-title="The famous Cornell clock tower"><img data-aos="fade-up" 
+				src="images/photo/clock-tower.jpg" class="photo-image"></a>	
+			<a href="images/photo/west-campus.jpg" data-lightbox="photo-gallery" data-title="West Campus at night"><img data-aos="fade-up" 
+				src="images/photo/west-campus.jpg" class="photo-image"></a>	
+			<a href="images/photo/north-campus.jpg" data-lightbox="photo-gallery" data-title="North Campus, my home"><img data-aos="fade-up" 
+				src="images/photo/north-campus.jpg" class="photo-image"></a>	
+			<a href="images/photo/walking-tours.jpg" data-lightbox="photo-gallery" data-title="A photo I captured during walking tours"><img data-aos="fade-up" 
+				src="images/photo/walking-tours.jpg" class="photo-image"></a>	
+			<a href="images/photo/cornell-sunset.jpg" data-lightbox="photo-gallery" data-title="A classic Cornell sunset during the winter"><img data-aos="fade-up" 
+				src="images/photo/cornell-sunset.jpg" class="photo-image"></a>	
+			<a href="images/photo/snow-day.jpg" data-lightbox="photo-gallery" data-title="A cold, snowy day on campus"><img data-aos="fade-up" 
+				src="images/photo/snow-day.jpg" class="photo-image"></a>	
+			<a href="images/photo/sage-chapel.jpg" data-lightbox="photo-gallery" data-title="Sage Chapel on a crip winter morning"><img data-aos="fade-up" 
+				src="images/photo/sage-chapel.jpg" class="photo-image"></a>	
+			<a href="images/photo/walk-to-class.jpg" data-lightbox="photo-gallery" data-title="I'll never get sick of this walk to class"><img data-aos="fade-up" 
+				src="images/photo/walk-to-class.jpg" class="photo-image"></a>	
+			<a href="images/photo/ckb-quad.jpg" data-lightbox="photo-gallery" data-title="The CKB Quad one earling morning during O-week"><img data-aos="fade-up" 
+				src="images/photo/ckb-quad.jpg" class="photo-image"></a>	
+			<a href="images/photo/venice-alley.jpg" data-lightbox="photo-gallery" data-title="A narrow alley in Venice"><img data-aos="fade-up" 
+				src="images/photo/venice-alley.jpg" class="photo-image"></a>	
+			<a href="images/photo/venice-bridge.jpg" data-lightbox="photo-gallery" data-title="A bridge spanning the canals of Venice"><img data-aos="fade-up" 
+				src="images/photo/venice-bridge.jpg" class="photo-image"></a>	
+			<a href="images/photo/grand-canal-morning.jpg" data-lightbox="photo-gallery" data-title="The Grand Canal at sunrise"><img data-aos="fade-up" 
+				src="images/photo/grand-canal-morning.jpg" class="photo-image"></a>	
+			<a href="images/photo/grand-canal-sunset.jpg" data-lightbox="photo-gallery" data-title="The Grand Canal at sunset"><img data-aos="fade-up" 
+				src="images/photo/grand-canal-sunset.jpg" class="photo-image"></a>	
+			<a href="images/photo/st-marks-square.jpg" data-lightbox="photo-gallery" data-title="St. Mark's Square"><img data-aos="fade-up" 
+				src="images/photo/st-marks-square.jpg" class="photo-image"></a>	
+			<a href="images/photo/gondolas.jpg" data-lightbox="photo-gallery" data-title="Gondolas lining the canal"><img data-aos="fade-up" 
+				src="images/photo/gondolas.jpg" class="photo-image"></a>	
+			<a href="images/photo/santa-maddalena.jpg" data-lightbox="photo-gallery" data-title="The Santa Maddalena church, with the Dolomites in the background"><img data-aos="fade-up" 
+				src="images/photo/santa-maddalena.jpg" class="photo-image"></a>	
+			<a href="images/photo/winding-road.jpg" data-lightbox="photo-gallery" data-title="A winding road through the Dolomites"><img data-aos="fade-up" 
+				src="images/photo/winding-road.jpg" class="photo-image"></a>	
+			<a href="images/photo/mountain-view.jpg" data-lightbox="photo-gallery" data-title="A breathtaking scenic view from Canazei, Trentino, Italy"><img data-aos="fade-up" 
+				src="images/photo/mountain-view.jpg" class="photo-image"></a>	
+			<a href="images/photo/alpine-countryside-1.jpg" data-lightbox="photo-gallery" data-title="The alpine countryside"><img data-aos="fade-up" 
+				src="images/photo/alpine-countryside-1.jpg" class="photo-image"></a>	
+			<a href="images/photo/alpine-countryside-2.jpg" data-lightbox="photo-gallery" data-title="The alpine countryside"><img data-aos="fade-up" 
+				src="images/photo/alpine-countryside-2.jpg" class="photo-image"></a>	
+			<a href="images/photo/seceda.jpg" data-lightbox="photo-gallery" data-title="The iconic summit of Seceda"><img data-aos="fade-up" 
+				src="images/photo/seceda.jpg" class="photo-image"></a>	
+			<a href="images/photo/cows.jpg" data-lightbox="photo-gallery" data-title="Some cows munching on grass"><img data-aos="fade-up" 
+				src="images/photo/cows.jpg" class="photo-image"></a>	
+			<a href="images/photo/bw-door.jpg" data-lightbox="photo-gallery" data-title="A black and white photo of an abandoned church"><img data-aos="fade-up" 
+				src="images/photo/bw-door.jpg" class="photo-image"></a>	
+			<a href="images/photo/dolomites-town.jpg" data-lightbox="photo-gallery" data-title="A small town nestled in the Dolomites"><img data-aos="fade-up" 
+				src="images/photo/dolomites-town.jpg" class="photo-image"></a>	
+			<a href="images/photo/above-the-clouds-1.jpg" data-lightbox="photo-gallery" data-title="Far above the clouds on Monte Lagazuoi"><img data-aos="fade-up" 
+				src="images/photo/above-the-clouds-1.jpg" class="photo-image"></a>	
+			<a href="images/photo/above-the-clouds-2.jpg" data-lightbox="photo-gallery" data-title="Far above the clouds on Monte Lagazuoi"><img data-aos="fade-up" 
+				src="images/photo/above-the-clouds-2.jpg" class="photo-image"></a>	
+			<a href="images/photo/morning-lagazuoi.jpg" data-lightbox="photo-gallery" data-title="Earling morning in Monte Lagazuoi"><img data-aos="fade-up" 
+				src="images/photo/morning-lagazuoi.jpg" class="photo-image"></a>	
+			<a href="images/photo/3-peaks.jpg" data-lightbox="photo-gallery" data-title="The towering Three Peaks of Lavaredo"><img data-aos="fade-up" 
+				src="images/photo/3-peaks.jpg" class="photo-image"></a>	
+			<a href="images/photo/chapel-bridge.jpg" data-lightbox="photo-gallery" data-title="The famous Chapel Bridge"><img data-aos="fade-up" 
+				src="images/photo/chapel-bridge.jpg" class="photo-image"></a>	
+			<a href="images/photo/temple-of-heaven.jpg" data-lightbox="photo-gallery" data-title="The Temple of Heaven"><img data-aos="fade-up" 
+				src="images/photo/temple-of-heaven.jpg" class="photo-image"></a>	
+			<a href="images/photo/forbidden-city.jpg" data-lightbox="photo-gallery" data-title="The Forbidden City"><img data-aos="fade-up" 
+				src="images/photo/forbidden-city.jpg" class="photo-image"></a>	
+			<a href="images/photo/great-wall.jpg" data-lightbox="photo-gallery" data-title="The Great Wall of China"><img data-aos="fade-up" 
+				src="images/photo/great-wall.jpg" class="photo-image"></a>	
+			<a href="images/photo/panda.jpg" data-lightbox="photo-gallery" data-title="Two pandas enjoying some bamboo"><img data-aos="fade-up" 
+				src="images/photo/panda.jpg" class="photo-image"></a>	
+			<a href="images/photo/siguniangshan-town.jpg" data-lightbox="photo-gallery" data-title="Overlook of Siguniangshan Town"><img data-aos="fade-up" 
+				src="images/photo/siguniangshan-town.jpg" class="photo-image"></a>	
+			<a href="images/photo/red-rocks.jpg" data-lightbox="photo-gallery" data-title="Red rocks and fog in Sichuan, China"><img data-aos="fade-up" 
+				src="images/photo/red-rocks.jpg" class="photo-image"></a>	
+			<a href="images/photo/waterfall.jpg" data-lightbox="photo-gallery" data-title="A cascading waterfall in Sichuan, China"><img data-aos="fade-up" 
+				src="images/photo/waterfall.jpg" class="photo-image"></a>	
+			<a href="images/photo/river.jpg" data-lightbox="photo-gallery" data-title="River flowing through the Chinese countryside"><img data-aos="fade-up" 
+				src="images/photo/river.jpg" class="photo-image"></a>	
+			<a href="images/photo/wo-ai-ni.jpg" data-lightbox="photo-gallery" data-title="A trinket inscribed with the phrase 'I love you'"><img data-aos="fade-up" 
+				src="images/photo/wo-ai-ni.jpg" class="photo-image"></a>	
+			<a href="images/photo/shanghai.jpg" data-lightbox="photo-gallery" data-title="The Shanghai Bund lit up at night"><img data-aos="fade-up" 
+				src="images/photo/shanghai.jpg" class="photo-image"></a>	
 
 			<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-			<script src="aos.js"></script>
+			<script src="js/aos.js"></script>
 			<script type="text/javascript">
 				AOS.init({
 					duration: 1500,
 				});
 			</script>
-
-
 
  			<div class="footer">
 				<p>&#169 2020 Eric Gu</p>
